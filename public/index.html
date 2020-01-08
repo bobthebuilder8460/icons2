@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animator</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Search for different animes here." />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CODELAB: Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Weather PWA" />
+    <meta name="theme-color" content="#317EFB" />
+    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png" />
+  </head>
+  <body>
+    <div>
+      <div class="topnav">
+        <a
+          class="active"
+          href="https://bobthebuilder8460-animeicons2.glitch.me/"
+          >Animator</a
+        >
+        <input
+          aria-label="input"
+          type="text"
+          placeholder="Anime.."
+          name="search"
+          id="myInput"
+        />
+        <div class="grid-container">
+          <div class="header">
+            <button id="butInstall" aria-label="Install" hidden></button>
+          </div>
+        </div>
+        <button
+          aria-label="output"
+          type="submit"
+          onclick="search()"
+          id="myBtn"
+          hidden
+        ></button>
+        <div id="content"></div>
+      </div>
+    </div>
+    <script src="client.js"></script>
+    <script src="addserviceworker.js"></script>
+    <script src="install.js"></script>
+  </body>
+</html>

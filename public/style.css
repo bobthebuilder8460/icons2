@@ -1,0 +1,132 @@
+.header button {
+  border: none;
+  cursor: pointer;
+  height: 24px;
+  margin-right: 16px;
+  opacity: 0.54;
+  outline: none;
+  overflow: hidden;
+  text-indent: -30000px;
+  transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  width: 24px;
+}
+
+body {
+  font-family: "Helvetica", "Verdana", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#F25C05;
+}
+
+
+
+#content {
+  position: absolute;
+  text-align: center;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 1fr;
+  vertical-align: middle;
+  color:#F2F2F2;
+  background: linear-gradient(to bottom, #FF6600 0%, #FF9D00 100%)
+}
+
+.synopsis {
+  text-align: right;
+  color:black;
+}
+
+#myInput{
+  align:right;
+  
+}
+
+.header #butInstall {
+  background: url(/images/install.svg) center center no-repeat;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  list-style: none;
+  text-align: center;
+  text-align:center;
+  border-style: solid;
+  border-color: black;
+  padding:30px;
+  border-radius: 25px;
+  padding: 20px; 
+  margin:10px;
+  color:black;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color:#0D0D0D;
+}
+
+.topnav a {
+  float:left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#F2F2F2;
+}
+
+.topnav a.active {
+  background-color:#0D0D0D;
+  color: white;
+  text-align:center;
+}
+
+.topnav .search-container {
+  float: left;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align:left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid;  
+  }  
+}
+
